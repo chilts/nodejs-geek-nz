@@ -1,7 +1,125 @@
 doctype 5
 html
   head
+    meta(http-equiv="Content-Type",content="text/html; charset=utf-8")
     title= title
-    link(rel='stylesheet', href='/css/style.css')
+    link(rel="stylesheet",href="/s/css/style.css")
+    link(rel="icon",href="/s/img/icon.ico")
   body
-    block content
+
+    #headWrap
+      #headpanel
+        #logo
+          h1= title
+        #quots Promoting the use of Node.js in and outsourcing to New Zealand.
+        #menu
+          ul
+            li
+              a(href="#") Home
+            li
+              div.gap
+            li
+              a(href="#") About
+            li
+              div.gap
+            li
+              a(href="#") Newsletter
+            li
+              div.gap
+            li
+              a(href="#") Duty
+            li
+              div.gap
+
+    #contentWrap
+      #contentPanel
+        #leftPanel
+          .toplinks
+            h2 Freelance
+            h3 A list of independent freelance workers who can help with your project. 
+            p Each person has different skills they can offer as well as being in different locations, please see each individual for more details.
+            ul
+              li
+                a(href="/freelance/andrew-chilton.html") Andrew Chilton (AppsAttic)
+              li
+                a(href="#") ...
+              li
+                a(href="#") ...
+              li
+                a.bottom(href="#") ...
+          //
+            #loginPanel 
+              h2 User Login
+              h3 Mauris auctor lorem sit amet cursus
+              input(name="name",type="text",value="Name")
+              .blank
+              input(name="password",type="text",value="password")
+              p
+                | Not yet a Member? 
+                a(href="#") Register Now
+              a.login(href="#") Login
+          #projectsPanel
+            h2 Projects
+            h3 
+            .pic1
+            .blank
+            .pic2
+            a(href="#") Next
+
+        #middlePanel
+          block content
+
+        #rightPanel
+          .services
+            h2 Calendar of Events
+            ul
+              li
+                .cal 12
+                  span Dec
+                h2 Suspendisse tortor leo!!!
+                p Nullam dapibus laoreet magna.uspendisse tortor leo.
+                a(href="/events/2012-12-12-wellington-nodejs-meetup") Read more ...
+                .author
+                  span By 
+                  | A Noder
+              li
+                .cal 15
+                  span June
+                h2 Suspendisse tortor leo!!!
+                p Nullam dapibus laoreet magna.uspendisse tortor leo.
+                a(href="#") Quisque vel metus non ante vehicula consectetuer.
+                .author
+                  span By 
+                  | A Noder
+
+          //
+            .contacts
+              h2 Quick Contact
+              input(name="name",type="text",value="Your name")
+              input(name="email",type="text",value="Your email address")
+              textarea(name="msg",rows="",cols="") Put your message here.
+              a(href="#") Submit
+
+    #footWrap
+      #footPanel
+        #footNav
+          ul
+            li
+              a(href="#") Home
+            li
+              .blank |
+            li
+              a(href="#") Home
+            li
+              .blank |
+            li
+              a(href="#") Home
+            li
+              .blank |
+            li
+              a(href="#") Home
+        p Site created and maintained by 
+          a(href="http://appsattic.com/") AppsAttic Ltd
+          | . All content licensed under 
+          a(href="http://www.creativecommons.org.nz/licences/licences-explained/") CC-BY-ND
+          | .
