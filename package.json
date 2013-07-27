@@ -3,16 +3,23 @@
   "description": "A site for promoting Node.js in New Zealand.",
   "version": "0.1.0",
   "private": true,
+
   "scripts" : {
     "start" : "node app.js"
   },
-  "subdomain" : "nodejsgeeknz",
-  "domains" : [ "nodejs.geek.nz" ],
-  "engines" : {
-    "node" : "0.8.x"
+
+  "homepage" : "https://github.com/chilts/nodejs-geek-nz/",
+  "repository" : {
+    "type" : "git",
+    "url"  : "git://github.com/chilts/nodejs-geek-nz.git"
   },
+  "bugs" : {
+    "url" : "http://github.com/chilts/nodejs-geek-nz/issues"
+  },
+
   "dependencies": {
     "express": "3.3.x",
     "jade": "*"
   }
+
 }
