@@ -32,7 +32,7 @@ script
     exec \
         sudo -E -u __USER__ \
         __NODE__ \
-        __PWD__/server.js 8765 >> /var/log/nodejs-geek-nz/access.log
+        __PWD__/app.js 8765 >> /var/log/nodejs-geek-nz/access.log
 
 end script
 
