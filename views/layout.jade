@@ -1,8 +1,11 @@
-doctype 5
+!!!
 html
   head
-    meta(http-equiv="Content-Type",content="text/html; charset=utf-8")
+    meta(charset="utf-8")
     title= title
+    meta(
+      name="description",
+      content="Site for all users of Node.js in New Zealand.")
     link(rel="stylesheet",href="/s/css/style.css")
     link(rel="icon",href="/s/img/icon.ico")
   body
@@ -11,7 +14,7 @@ html
       #headpanel
         #logo
           h1= title
-        #quots Promoting the use of Node.js in and outsourcing to New Zealand.
+        #quots Promoting the use of Node.js in New Zealand.
         #menu
           ul
             li
@@ -19,78 +22,47 @@ html
             li
               div.gap
             li
-              a(href="#") About
+              a(href="/about") About
             li
               div.gap
             li
-              a(href="#") Newsletter
+              a(href="/news") News
             li
               div.gap
             li
-              a(href="#") Duty
+              a(href="/groups") Groups
+            li
+              div.gap
+            li
+              a(href="/people") People
+            li
+              div.gap
+            li
+              a(href="/companies") Companies
             li
               div.gap
 
     #contentWrap
       #contentPanel
-        #leftPanel
-          .toplinks
-            h2 Freelance
-            h3 A list of independent freelance workers who can help with your project. 
-            p Each person has different skills they can offer as well as being in different locations, please see each individual for more details.
-            ul
-              li
-                a(href="/freelance/andrew-chilton.html") Andrew Chilton (AppsAttic)
-              li
-                a(href="#") ...
-              li
-                a(href="#") ...
-              li
-                a.bottom(href="#") ...
-          //
-            #loginPanel 
-              h2 User Login
-              h3 Mauris auctor lorem sit amet cursus
-              input(name="name",type="text",value="Name")
-              .blank
-              input(name="password",type="text",value="password")
-              p
-                | Not yet a Member? 
-                a(href="#") Register Now
-              a.login(href="#") Login
-          #projectsPanel
-            h2 Projects
-            h3 
-            .pic1
-            .blank
-            .pic2
-            a(href="#") Next
 
         #middlePanel
           block content
 
         #rightPanel
           .services
-            h2 Calendar of Events
-            ul
-              li
-                .cal 12
-                  span Dec
-                h2 Suspendisse tortor leo!!!
-                p Nullam dapibus laoreet magna.uspendisse tortor leo.
-                a(href="/events/2012-12-12-wellington-nodejs-meetup") Read more ...
-                .author
-                  span By 
-                  | A Noder
-              li
-                .cal 15
-                  span June
-                h2 Suspendisse tortor leo!!!
-                p Nullam dapibus laoreet magna.uspendisse tortor leo.
-                a(href="#") Quisque vel metus non ante vehicula consectetuer.
-                .author
-                  span By 
-                  | A Noder
+            h2 Upcoming Events
+            if events.length
+              ul
+                for event in events
+                  li
+                    .cal= event.day
+                      span= event.mon
+                    h2= event.title
+                    p= event.desc
+                    a(href=event.url) Read more ...
+                    .author
+                      span By 
+                      | #{event.by}
 
           //
             .contacts
@@ -105,21 +77,31 @@ html
         #footNav
           ul
             li
-              a(href="#") Home
+              a(href="/") Home
             li
               .blank |
             li
-              a(href="#") Home
+              a(href="/about") About
             li
               .blank |
             li
-              a(href="#") Home
+              a(href="/news") News
             li
               .blank |
             li
-              a(href="#") Home
+              a(href="/groups") Groups
+            li
+              .blank |
+            li
+              a(href="/") People
+            li
+              .blank |
+            li
+              a(href="/companies") Companies
         p Site created and maintained by 
-          a(href="http://appsattic.com/") AppsAttic Ltd
-          | . All content licensed under 
+          a(href="http://chilts.org/") Andrew Chilton
+          |  (
+          a(href="http://twitter.com/andychilton") @andychilton
+          | ). All content licensed under 
           a(href="http://www.creativecommons.org.nz/licences/licences-explained/") CC-BY-ND
           | .
