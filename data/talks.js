@@ -10,6 +10,7 @@ module.exports = [
                 "title"   : "Grunt.js",
                 "by"      : "Jason Darwin",
                 "twitter" : "nzmebooks",
+                "slides"  : "https://docs.google.com/presentation/d/1XHnr3P11e-98zvu0GI8p1kqkUrKqZ_TQNjS4HRwy-9Q/present#slide=id.p",
             },
             {
                 "title"   : "LevelDB : Build your own Database",
