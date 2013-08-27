@@ -1,0 +1,23 @@
+extends layout
+
+block content
+  h2 Archive of Presentations
+
+  p Caveats: Not all the talks had slides. Some slides were wrong on purpose (and discussed in the talk).
+
+  for meeting in talks
+    .meeting
+      h3 #{moment(meeting.date).format("DD MMM YYYY")}
+      p Hosted at #{meeting.location}.
+
+      ul
+        for talk in meeting.talks
+          li
+            if talk.slides
+              a(href=talk.slides) #{talk.title}
+            else
+              | #{talk.title}
+            |  by 
+            a(href="http://twitter.com/#{talk.twitter}")= talk.by
+
+      p Attendance: #{meeting.attendance}

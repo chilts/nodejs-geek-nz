@@ -8,6 +8,7 @@ var http = require('http');
 var path = require('path');
 
 var express = require('express');
+var moment = require('moment');
 
 var routes = require('./lib/routes.js')
 
@@ -29,6 +30,7 @@ var app = express();
 // add some local data
 app.use(function(req, res, next) {
     res.locals.events = events;
+    res.locals.moment = moment;
     next();
 });
 
@@ -51,6 +53,7 @@ app.configure('development', function() {
 
 // configure routes
 app.get('/', routes.index);
+app.get('/talks', routes.talks);
 
 http.createServer(app).listen(app.get('port'), function() {
     console.log("Express server listening on port " + app.get('port'));
