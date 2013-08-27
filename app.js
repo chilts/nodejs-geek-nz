@@ -18,6 +18,9 @@ var routes = require('./lib/routes.js')
 var port = process.argv[2] || 8765;
 
 var events = require('./data/calendar.json');
+var menu = require('./data/menu.js');
+
+// filter out the old events
 events = events.filter(function(event) {
     return event.show;
 });
@@ -26,6 +29,8 @@ events = events.filter(function(event) {
 // the app itself
 
 var app = express();
+
+app.locals.menu = menu;
 
 // add some local data
 app.use(function(req, res, next) {

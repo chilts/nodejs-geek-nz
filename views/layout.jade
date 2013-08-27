@@ -17,34 +17,11 @@ html
         #quots Promoting the use of Node.js in New Zealand.
         #menu
           ul
-            li
-              a(href="#") Home
-            li
-              div.gap
-            li
-              a(href="#ToDo") About
-            li
-              div.gap
-            li
-              a(href="#ToDo") News
-            li
-              div.gap
-            li
-              a(href="#ToDo") Groups
-            li
-              div.gap
-            li
-              a(href="/talks") Talks
-            li
-              div.gap
-            li
-              a(href="#ToDo") People
-            li
-              div.gap
-            li
-              a(href="#ToDo") Companies
-            li
-              div.gap
+            for item in menu
+              li
+                a(href=item.url)= item.title
+              li
+                div.gap
 
     #contentWrap
       #contentPanel
@@ -78,30 +55,15 @@ html
 
     #footWrap
       #footPanel
+
         #footNav
           ul
-            li
-              a(href="/") Home
-            li
-              .blank |
-            li
-              a(href="/about") About
-            li
-              .blank |
-            li
-              a(href="/news") News
-            li
-              .blank |
-            li
-              a(href="/groups") Groups
-            li
-              .blank |
-            li
-              a(href="/") People
-            li
-              .blank |
-            li
-              a(href="/companies") Companies
+            for item in menu
+              li
+                a(href=item.url)= item.title
+              li
+                .blank |
+
         p Site created and maintained by 
           a(href="http://chilts.org/") Andrew Chilton
           |  (
