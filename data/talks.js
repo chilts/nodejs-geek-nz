@@ -1,5 +1,28 @@
 module.exports = [
     {
+        "location" : "Catalyst IT, Level 3",
+        "date"  : "2013-09-24",
+        "day"   : 24,
+        "month" : "Sep",
+        "year"  : 2013,
+        "talks" : [
+            {
+                "title"   : "Way of the Node",
+                "by"      : "Andrew Chilton",
+                "twitter" : "andychilton",
+                "slides"  : "http://f.chilts.org/slides/20130924-way-of-the-node.html",
+            },
+            {
+                "title"   : "Intro to Express",
+                "by"      : "Andrew Chilton",
+                "twitter" : "andychilton",
+                "slides"  : "http://f.chilts.org/slides/20130924-intro-to-express.html",
+            },
+        ],
+        "meetup" : "http://www.meetup.com/Node-js-Wellington/events/136895152/",
+        "attendance" : 15,
+    },
+    {
         "location" : "Learning Media, Level 4",
         "date"  : "2013-08-27",
         "day"   : 27,

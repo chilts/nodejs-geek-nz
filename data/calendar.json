@@ -1,20 +1,38 @@
 [
     {
+        "title" : "Node Night, Wellington",
+        "desc"  : "TBD.",
+        "day"   : 22,
+        "mon"   : "Oct",
+        "show"  : true,
+        "url"   : "http://www.meetup.com/Node-js-Wellington/events/142033732/",
+        "by"    : "chilts"
+    },
+    {
+        "title" : "Node Night, Wellington",
+        "desc"  : "\"Way of the Node\" and \"Intro to Express\".",
+        "day"   : 24,
+        "mon"   : "Sep",
+        "show"  : true,
+        "url"   : "http://www.meetup.com/Node-js-Wellington/events/136895152/",
+        "by"    : "chilts"
+    },
+    {
+        "title" : "Node Night, Wellington",
+        "desc"  : "Grunt.js and LevelDB",
+        "day"   : 27,
+        "mon"   : "Aug",
+        "show"  : false,
+        "url"   : "http://www.meetup.com/Node-js-Wellington/events/131124832/",
+        "by"    : "chilts"
+    },
+    {
         "title" : "Node.js Wellington",
         "desc"  : "Let's meetup and enjoy some real ale and some great conversation.",
         "day"   : 23,
         "mon"   : "Jul",
         "show"  : false,
         "url"   : "http://www.meetup.com/Node-js-Wellington/events/127544662/",
-        "by"    : "chilts"
-    },
-    {
-        "title" : "Node.js Wellington",
-        "desc"  : "Some presentations.",
-        "day"   : 27,
-        "mon"   : "Aug",
-        "show"  : true,
-        "url"   : "http://www.meetup.com/Node-js-Wellington/events/131124832/",
         "by"    : "chilts"
     }
 ]
