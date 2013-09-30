@@ -1,7 +1,7 @@
 [
     {
         "title" : "Node Night, Wellington",
-        "desc"  : "TBD.",
+        "desc"  : "\"Queueing / Messaging Systems\" by @terrcin",
         "day"   : 22,
         "mon"   : "Oct",
         "show"  : true,
@@ -10,7 +10,7 @@
     },
     {
         "title" : "Node Night, Wellington",
-        "desc"  : "\"Way of the Node\" and \"Intro to Express\".",
+        "desc"  : "\"Way of the Node\" and \"Intro to Express\" by @andychilton.",
         "day"   : 24,
         "mon"   : "Sep",
         "show"  : true,
@@ -19,7 +19,7 @@
     },
     {
         "title" : "Node Night, Wellington",
-        "desc"  : "Grunt.js and LevelDB",
+        "desc"  : "\"Grunt.js\" by @nzmebooks and \"LevelDB\" by @andychilton",
         "day"   : 27,
         "mon"   : "Aug",
         "show"  : false,
