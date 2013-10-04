@@ -1,7 +1,7 @@
 [
     {
         "title" : "Node Night, Wellington",
-        "desc"  : "\"Queueing / Messaging Systems\" by @terrcin",
+        "desc"  : "\"Queueing / Messaging Systems\" by @terrcin and \"Node.js in the Browser\" by @MattMcKegg",
         "day"   : 22,
         "mon"   : "Oct",
         "show"  : true,
