@@ -15,6 +15,8 @@ var routes = require('./lib/routes.js')
 // ----------------------------------------------------------------------------
 // load some data
 
+process.title = 'nodejs.geek.nz';
+
 var port = process.argv[2] || 8765;
 
 var events = require('./data/calendar.json');
