@@ -52,7 +52,7 @@ echo
 
 # set up the server
 echo "Setting up various directories ..."
-sudo mkdir -p /var/log//var/log/nz-geek-nodejs/
+sudo mkdir -p /var/log/nz-geek-nodejs/
 sudo chown $THIS_USER:$THIS_GROUP /var/log/nz-geek-nodejs/
 echo
 
